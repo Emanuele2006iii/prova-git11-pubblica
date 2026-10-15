@@ -1,0 +1,18 @@
+# Un controllo finto: passa se stato.txt contiene OK, fallisce altrimenti
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controllo di stato.txt
+        run: grep -qx "OK" stato.txt

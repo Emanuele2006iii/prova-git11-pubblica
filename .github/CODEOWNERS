@@ -1,0 +1,7 @@
+# Repository di prova per gli appunti Git 11: niente di vero qui dentro.
+
+# Tutto, salvo regole piu' in basso
+*                       @Emanuele2006iii
+
+# Il CODEOWNERS stesso: la documentazione consiglia di dargli un proprietario
+/.github/CODEOWNERS     @Emanuele2006iii
